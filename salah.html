@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #F8F9D7;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logo {
+        float: left;
+        width: 30%;
+        padding: 10px 10px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #6E85B7;
+        padding: 20px 10px;
+    }
+
+    .navbar a {
+        color: #C4D7E0;
+        float: left;
+        font-size: 18px;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        line-height: 250x;
+        border-radius: 5px; 
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn,
+    .dropbtn:focus {
+        background-color: #B2C8DF;
+        color: #F8F9D7;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        color: #C4D7E0;
+        padding: 10px 14px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .navbar-right {
+        float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+        .navbar a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .navbar-right {
+            float: none;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="https://www.dicoding.com/">
+                <img class="logo"
+                    src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/image-assets/dicoding-logo.png"
+                    alt="Dicoding Logo">
+            </a>
+            <nav>
+                <div class="navbar-right">
+                    <a href="#news">Keahlian</a>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Projek Saya
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="https://www.github.com/naufalalief">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <a href="#">Hubungi Saya</a>
+                </div>
+        </div>
+        </nav>
+    </header>
+</body>
+<script src="assets/dropdown.js"></script>
+
+</html>
